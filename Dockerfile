@@ -11,12 +11,6 @@ RUN apk update && \
     mv /opt/linux /opt/multiotp && \
     rm /var/cache/apk/*
 
-RUN apk add --update tzdata && \
-    cp /usr/share/zoneinfo/Australia/Sydney /etc/localtime && \
-    echo "Australia/Sydney" > /etc/timezone && \
-    apk del tzdata && \
-    rm /var/cache/apk/*
-
 EXPOSE 1812/udp
 
 CMD radiusd -f
