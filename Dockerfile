@@ -9,6 +9,7 @@ RUN apk update && \
     rm -rf windows sources raspberry multiotp.zip && \
     chmod +x /opt/linux/multiotp.php && \
     mv /opt/linux /opt/multiotp && \
+    rm /etc/localtime && \
     rm /var/cache/apk/*
 
 EXPOSE 1812/udp
