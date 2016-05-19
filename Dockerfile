@@ -1,7 +1,7 @@
 FROM alpine
 
 RUN apk update && \
-    apk add --update freeradius php && \
+    apk add --update freeradius freeradius-mysql php && \
     chgrp radius /var/run/radiusd && chmod g+rwx /var/run/radiusd && \
     mkdir /opt && cd /opt && \
     wget http://download.multiotp.net/4.x/multiotp-4.3.2.6.zip -O multiotp.zip && \
