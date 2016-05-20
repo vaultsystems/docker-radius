@@ -12,6 +12,6 @@ RUN apk update && \
     rm /etc/localtime && \
     rm /var/cache/apk/*
 
-EXPOSE 1812/udp
+EXPOSE 1812/udp 1813/udp
 
 CMD radiusd -f -l stdout
