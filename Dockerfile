@@ -14,4 +14,4 @@ RUN apk update && \
 
 EXPOSE 1812/udp
 
-CMD radiusd -f
+CMD radiusd -f -l stdout
