@@ -1,6 +1,6 @@
 # docker-radius
 
-FreeRADIUS 3.0.9 with multiOTP 4.3.2.6
+FreeRADIUS 3.0.13 with multiOTP 5.0.4.8
 
 mount the following volumes and populate with config files:
 
